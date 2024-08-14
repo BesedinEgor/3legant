@@ -1,0 +1,50 @@
+.hero {
+  background-image: url("../img/hero/hero-bg-mobile.jpg");
+  padding-top: 40px;
+}
+
+.hero__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 420px; //????
+}
+
+.hero__title {
+  margin-bottom: 8px;
+
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #121212;
+
+  span {
+    color: #377dff;
+  }
+}
+
+.hero__text {
+  margin-bottom: 16px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: #121212;
+}
+
+.hero__button {
+  background-color: #121212;
+  padding: 12px 56px;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  color: var(--white-color);
+}

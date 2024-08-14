@@ -2,13 +2,13 @@
 .mobile-nav-btn {
 	--time: 0.1s;
 
-	--width: 40px;
+	--width: 20px;
 	--height: 30px;
 
-	--line-height: 4px;
-	--spacing: 6px;
+	--line-height: 2px;
+	--spacing: 3px;
 
-	--color: #000;
+	--color: #141718;
 	--radius: 4px;
 
 	/* Fixed height and width */
@@ -22,6 +22,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: 10px;
 }
 
 .nav-icon {

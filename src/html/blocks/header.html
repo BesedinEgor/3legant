@@ -1,11 +1,38 @@
 <header class="header">
-    <div class="container">
-        <div class="header__row">
-            <div class="logo">3legant</div>
-            <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
-            </button>
+  <div class="container">
+    <nav class="header__nav">
+        <button class="mobile-nav-btn">
+            <div class="nav-icon"></div>
+        </button>
+        <a class="header__logo" href="#!">3legant<span>.</span></a>
+        <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#!" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#!" class="nav__link">Shop</a>
+        </li>
+        <li class="nav__item">
+          <a href="#!" class="nav__link">Product</a>
+        </li>
+        <li class="nav__item">
+            <a href="#!" class="nav__link">Contact Us</a>
+        </li>
+      </ul>
+      <div class="header__client">
+        <div class="nav__search">
+          <img src="../img/svg/search.svg" alt="search" />
         </div>
-    </div>
+        <div class="nav__login">
+          <img src="../img/svg/login.svg" alt="userLogin" />
+        </div>
+        <div class="nav__basket">
+            <img src="../img/svg/basket.svg" alt="basket" />
+        </div>
+        <div class="nav__number"></div>
+      </div>
+    </nav>
+  </div>
+  @@include('mobile-nav.html')
 </header>
-@@include('mobile-nav.html')
+

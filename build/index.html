@@ -1,24 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>3legant</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
-		<header class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="./fonts/inter/InterRegular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/inter/InterMedium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/inter/InterSemiBold.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/inter/InterBold.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/poppins/PoppinsRegular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/poppins/PoppinsMedium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/poppins/PoppinsSemiBold.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+
+    <title>3legant</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section class="sticker">
     <div class="container">
-        <div class="header__row">
-            <div class="logo">3legant</div>
-            <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
-            </button>
+        <div class="sticker__body">
+            <div class="sticker__title">30% off storewide — Limited time! </div>
+            <a class="sticker__link" href="#!">Shop Now</a>
+            <button class="sticker__close"></button>
         </div>
     </div>
-</header>
-<div class="mobile-nav">
+</section>
+     <header class="header">
+  <div class="container">
+    <nav class="header__nav">
+        <button class="mobile-nav-btn">
+            <div class="nav-icon"></div>
+        </button>
+        <a class="header__logo" href="#!">3legant<span>.</span></a>
+        <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#!" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#!" class="nav__link">Shop</a>
+        </li>
+        <li class="nav__item">
+          <a href="#!" class="nav__link">Product</a>
+        </li>
+        <li class="nav__item">
+            <a href="#!" class="nav__link">Contact Us</a>
+        </li>
+      </ul>
+      <div class="header__client">
+        <div class="nav__search">
+          <img src="../img/svg/search.svg" alt="search" />
+        </div>
+        <div class="nav__login">
+          <img src="../img/svg/login.svg" alt="userLogin" />
+        </div>
+        <div class="nav__basket">
+            <img src="../img/svg/basket.svg" alt="basket" />
+        </div>
+        <div class="nav__number"></div>
+      </div>
+    </nav>
+  </div>
+  <div class="mobile-nav ">
 	<ul class="mobile-nav__list">
 		<li><a href="#" class="active">Home</a></li>
 		<li><a href="#!">Services</a></li>
@@ -28,12 +112,27 @@
 	</ul>
 </div>
 
-		<footer class="footer">
+</header>
+
+
+     <section class="hero">
+  <div class="container">
+    <div class="hero__box">
+      <h1 class="hero__title">
+        Listen to the <span>amazing</span> music sound.
+      </h1>
+      <p class="hero__text">Experience music like never before</p>
+      <a class="hero__button" href="#!">Shopping Now</a>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
 	<div class="container">
 		<h2>Footer</h2>
 	</div>
 </footer>
 
-		<script src="./js/index.bundle.js"></script>
-	</body>
+    <script src="./js/index.bundle.js"></script>
+  </body>
 </html>

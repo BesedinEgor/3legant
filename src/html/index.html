@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>3legant</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
-		@@include('blocks/header.html')
-		@@include('blocks/footer.html')
-		<script src="./js/index.bundle.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="./fonts/inter/InterRegular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/inter/InterMedium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/inter/InterSemiBold.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/inter/InterBold.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/poppins/PoppinsRegular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/poppins/PoppinsMedium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/poppins/PoppinsSemiBold.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+
+    <title>3legant</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    @@include('blocks/sticker.html')
+     @@include('blocks/header.html')
+     @@include('blocks/hero.html')
+    @@include('blocks/footer.html')
+    <script src="./js/index.bundle.js"></script>
+  </body>
 </html>
