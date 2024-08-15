@@ -29,7 +29,7 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url('/img/svg/ticket-percent.svg');
+    background-image: url('../img/svg/ticket-percent.svg');
   }
 }
 .sticker__link {
@@ -48,6 +48,6 @@
     height: 16px;
     left: 0;
     top: 0;
-    background-image: url("/img/svg/sticker-close.svg");
+    background-image: url("../img/svg/sticker-close.svg");
   }
 }
