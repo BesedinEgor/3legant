@@ -6,13 +6,14 @@
 
 .container-right {
 	/* overflow-x: hidden; */
-	padding-left: calc(
-		(100% - var(--container-width)) / 2 + var(--container-padding)
-	);
+	padding-left: 35px;
+	// padding-left: calc(
+	// 	(100% - var(--container-width)) / 2 + var(--container-padding)
+	// );
 
-	@media (max-width: var(--laptop-size)) {
-		padding-left: var(--container-padding);
-	}
+	// @media (max-width: var(--laptop-size)) {
+	// 	padding-left: var(--container-padding);
+	// }
 }
 
 .container-left {

@@ -1,0 +1,99 @@
+.card {
+  max-width: 231px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card__photo {
+}
+
+.card__box {
+  position: relative;
+
+  &:before {
+    content: "new";
+    position: absolute;
+    width: 67px;
+    height: 24px;
+    top: 16px;
+    left: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #121212;
+
+    background-color: var(--white-color);
+  }
+}
+
+.card__like {
+  // opacity: 0; //desctop use
+  transition: opacity 0.2s ease-in;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  top: 16px;
+  left: 14px;
+  right: 14px;
+  height: 275px;
+
+  //   svg {
+  //     // width: 32px;
+  //     // height: 32px;
+  //     // cursor: pointer;
+
+  //     // &:hover {
+  //     //   path {
+  //     //     fill-rule: #000000;
+  //     //     fill: #000;
+  //     //   }
+  //     // }
+  // //   }
+
+  //   // &:hover { //desctop use
+  //   //     opacity: 1;
+  //   //     transition: opacity .2s ease-in;
+  //   // }
+}
+
+.card__button {
+  width: 100%;
+}
+
+.card__description {
+}
+
+.card__rating {
+  width: 70px;
+  height: 15px;
+  margin-bottom: 4px;
+  background-image: url("../img/svg/star.svg");
+}
+
+.card__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162%;
+  color: #141718;
+  margin-bottom: 4px;
+}
+
+.card__price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157%;
+  color: #121212;
+}
