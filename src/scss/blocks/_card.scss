@@ -48,7 +48,7 @@
   top: 16px;
   left: 14px;
   right: 14px;
-  height: 275px;
+  height: 88%;
 
   //   svg {
   //     // width: 32px;
@@ -69,8 +69,10 @@
   //   // }
 }
 
-.card__button {
+.card__button.hero__button {
   width: 100%;
+  padding: 12px 0;
+  font-size: 12px;
 }
 
 .card__description {

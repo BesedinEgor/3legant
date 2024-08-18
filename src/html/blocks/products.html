@@ -10,7 +10,7 @@
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        @@include('templates/card.html')
+         @@loop('templates/card.html', './data/arrivals.json')
 
         </div>
       </div>
