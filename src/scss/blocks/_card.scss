@@ -1,18 +1,16 @@
 .card {
   max-width: 231px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 12px;
-}
-
-.card__photo {
 }
 
 .card__box {
   position: relative;
 
-  &:before {
+  &.new:before,
+  &.hot:before {
     content: "new";
     position: absolute;
     width: 67px;
@@ -34,6 +32,10 @@
     color: #121212;
 
     background-color: var(--white-color);
+  }
+
+  &.hot:before {
+    content: 'hot';
   }
 }
 
@@ -75,14 +77,8 @@
   font-size: 12px;
 }
 
-.card__description {
-}
-
 .card__rating {
-  width: 70px;
-  height: 15px;
   margin-bottom: 4px;
-  background-image: url("../img/svg/star.svg");
 }
 
 .card__title {
