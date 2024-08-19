@@ -1,16 +1,13 @@
 <section class="products">
   <div class="container">
     <h2 class="products__title">New Arrivals</h2>
-    <div class="products__swiper-dots">
-      <div class="products__dot"></div>
-    </div>
   </div>
   <div class="container-right">
     <div class="swiper products-swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-         @@loop('templates/card.html', './data/arrivals.json')
+         @@loop('templates/card.html', './data/products.json')
 
         </div>
       </div>
