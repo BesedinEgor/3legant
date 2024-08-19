@@ -1,5 +1,6 @@
+<div class="swiper-slide">
   <article class="card">
-    <div class="card__box hot">
+    <div class="card__box new">
       <img class="card__photo" src="./img/products/@@img@2x.jpg" alt="card1" width="231" height="308" />
       <div class="card__like">
         <svg
@@ -61,15 +62,16 @@
             </filter>
           </defs>
         </svg>
+
+        <button class="card__button hero__button">Add to cart</button>
       </div>
     </div>
     <div class="card__description">
       <div class="card__rating">
-        @@for (let i = 0; i < context.rating; i++) {
-            <img src="./img/svg/star.svg" alt="starRating" width="16" height="16" />
-        }
+        
       </div>
       <a href="#!" class="card__title">@@title</a>
       <p class="card__price">@@price</p>
     </div>
   </article>
+</div>
