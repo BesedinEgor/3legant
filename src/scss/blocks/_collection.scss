@@ -16,6 +16,7 @@
 
 .collection__grid {
   display: grid;
+  justify-items: center;
   gap: 16px;
 }
 
@@ -70,7 +71,7 @@
 
     width: 16px;
     height: 16px;
-    background-image: url("../../img/svg/arrow-right.svg");
+    background-image: url("../img/svg/arrow-right.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }

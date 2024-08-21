@@ -1,0 +1,36 @@
+.bestseller {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bestseller__title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+  color: var(--black-color);
+}
+
+.bestseller__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 8px;
+  justify-items: center;
+
+  .card__title {
+    display: inline-block;
+    max-width: 152px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 157%;
+    margin-bottom: 4px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

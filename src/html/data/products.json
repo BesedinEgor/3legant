@@ -3,13 +3,13 @@
     "img": "card1",
     "title": "Skullcandy - Crusher anc 2 wireless headphones",
     "price": "$399.99",
-    "rating": 5
+    "rating": 3
   },
   {
     "img": "card2",
     "title": "BeatsStudio Pro",
     "price": "$299.99",
-    "rating":3
+    "rating":5
   },
   {
     "img": "card3",
@@ -27,6 +27,6 @@
     "img": "card5",
     "title": "Skullcandy - Crusher anc 2 wireless headphones",
     "price": "$299.99",
-    "rating": 2
+    "rating": 5
   }
 ]
