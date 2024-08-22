@@ -11,4 +11,8 @@
   line-height: 112%;
   letter-spacing: -0.02em;
   color: var(--dark-color);
+
+  @include minMobile {
+    font-size: 30px;
+  }
 }

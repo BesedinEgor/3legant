@@ -25,6 +25,12 @@
 
   color: #141718;
   background-color: var(--white-color);
+
+  @include minMobile {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
 }
 
 .timer__description {

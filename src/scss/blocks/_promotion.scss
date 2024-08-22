@@ -38,6 +38,10 @@
   line-height: 112%;
   letter-spacing: -0.02em;
   color: #121212;
+
+  @include minMobile {
+    font-size: 28px;
+  }
 }
 
 .promotion__text {

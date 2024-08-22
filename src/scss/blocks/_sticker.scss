@@ -31,6 +31,10 @@
     transform: translateY(-50%);
     background-image: url('../img/svg/ticket-percent.svg');
   }
+
+  @include minMobile {
+    font-size: 10px;
+  }
 }
 .sticker__link {
   display: none;

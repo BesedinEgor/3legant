@@ -32,5 +32,17 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+
+    @include minMobile {
+      max-width: auto;
+    }
+  }
+
+  @include minMobile {
+    grid-template-columns: 1fr;
+
+    .card__box img {
+      width: 200px;
+    }
   }
 }

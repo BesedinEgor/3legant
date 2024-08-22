@@ -35,6 +35,10 @@
     overflow: auto;
     font-size: auto;
   }
+
+  @include minMobile {
+    display: none;
+  }
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {

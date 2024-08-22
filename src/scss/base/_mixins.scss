@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin minMobile () {
+    @media (min-width: 315px) and (max-width: 374px) {
+        @content;
+    }
+}

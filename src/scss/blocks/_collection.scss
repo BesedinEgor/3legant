@@ -12,6 +12,10 @@
   letter-spacing: -0.02em;
   color: var(--black-color);
   margin-bottom: 16px;
+
+  @include minMobile {
+    font-size: 30px;
+  }
 }
 
 .collection__grid {
@@ -42,6 +46,10 @@
   line-height: 121%;
   letter-spacing: -0.02em;
   color: #121212;
+
+  @include minMobile {
+    font-size: 22px;
+  }
 }
 
 .collection__link {
