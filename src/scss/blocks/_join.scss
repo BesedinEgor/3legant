@@ -1,0 +1,76 @@
+.join {
+  background-color: #f2f4f6;
+  padding: 95px 0;
+}
+
+.join__title {
+  margin-bottom: 8px;
+
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 121%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121212;
+}
+
+.join__text {
+  margin-bottom: 32px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  text-align: center;
+  color: #121212;
+}
+
+.join__form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(108, 114, 117, 0.5);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../img/svg/email.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.join__input {
+  display: block;
+  padding: 12px 0;
+  padding-left: 32px;
+  margin-right: 8px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.03em;
+  color: #6c7275;
+}
+
+.join__submit {
+  padding: 12px 0;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.03em;
+  color: #6c7275;
+}

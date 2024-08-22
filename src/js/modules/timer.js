@@ -1,5 +1,5 @@
     //задаем конечную дату
-    const endDate = new Date("20 February, 2025, 23:59:59");
+    const endDate = new Date("27 Jule, 2025, 23:59:59");
     //элементы таймера
     const daysEl = document.querySelector("#days");
     const hoursEl = document.querySelector("#hours");
