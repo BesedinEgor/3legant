@@ -5,7 +5,7 @@
 }
 
 @mixin minMobile () {
-    @media (min-width: 315px) and (max-width: 354px) {
+    @media (min-width: 315px) and (max-width: 339px) {
         @content;
     }
 }
