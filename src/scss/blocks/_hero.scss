@@ -4,6 +4,12 @@
   background-size: cover;
   background-position: center;
   padding-top: 40px;
+
+  @include largeTablet {
+    background-image: url("../img/hero/hero-bg.jpg");
+    min-width: 100%;
+    min-height: 100%;
+  }
 }
 
 .hero__box {
@@ -11,6 +17,15 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 390px; //????
+
+  @include laptop {
+    padding-left: calc(100% / 2);
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    height: 840px;
+    padding-bottom: 0;
+  }
 }
 
 .hero__title {
@@ -30,6 +45,14 @@
 
   @include minMobile {
     font-size: 37px;
+  }
+
+  @include laptop {
+    max-width: 540px;
+    text-align: left;
+    font-size: 80px;
+    line-height: 105%;
+    letter-spacing: -0.04em;
   }
 }
 

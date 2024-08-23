@@ -38,6 +38,10 @@
       padding: 11px 16px 11px 48px;
     }
   }
+
+  @include largeTablet {
+    display: none;
+  }
 }
 
 .mobile-nav--open {
@@ -172,7 +176,11 @@
   padding: 10px 26px;
   border-radius: 6px;
   margin-bottom: 19px;
-  // margin-left: calc((100% - 600px) / 2);
+
+  @include tablet {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .mobile-nav__links {

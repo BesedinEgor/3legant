@@ -23,6 +23,10 @@
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+
+  @include largeTablet {
+    display: none;
+  }
 }
 
 .nav-icon {

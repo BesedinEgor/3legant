@@ -8,6 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include tablet {
+    gap: 10px;
+  }
 }
 .sticker__title {
   position: relative;
@@ -29,15 +33,63 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url('../img/svg/ticket-percent.svg');
+    background-image: url("../img/svg/ticket-percent.svg");
+
+    @include tablet {
+      width: 19px;
+      height: 19px;
+      background-size: cover;
+    }
+
+    @include desctop {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   @include minMobile {
     font-size: 10px;
   }
+
+  @include tablet {
+    font-size: 14px;
+    padding-left: 28px;
+    line-height: 157%;
+  }
+
+  @include desctop {
+    padding-left: 35px;
+    margin-right: 15px;
+  }
 }
+
 .sticker__link {
   display: none;
+
+  @include tablet {
+    padding-right: 22px;
+
+    position: relative;
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: #ffab00;
+
+    border-bottom: 1px solid #ffab00;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url("../img/svg/arrow-right-yellow.svg");
+    }
+  }
 }
 
 .sticker__close {
@@ -53,5 +105,17 @@
     left: 0;
     top: 0;
     background-image: url("../img/svg/sticker-close.svg");
+
+    @include tablet {
+      width: 19px;
+      height: 19px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @include tablet {
+    position: absolute;
+    right: 20px;
   }
 }

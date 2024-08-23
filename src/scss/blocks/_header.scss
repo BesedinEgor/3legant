@@ -5,8 +5,11 @@
 .header__nav {
   display: flex;
   align-items: center;
-  //   justify-content: space-between;
   padding: 18px 0;
+
+  @include largeTablet {
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
@@ -22,10 +25,33 @@
   span {
     color: #377dff;
   }
+
+  @include largeTablet {
+    margin-right: 0;
+    font-size: 24px;
+    line-height: 100%;
+  }
 }
 
 .nav__list {
   display: none;
+
+  @include largeTablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  a {
+    @include largeTablet {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 171%;
+      color: #141718;
+    }
+  }
 }
 
 .header__client {
@@ -52,12 +78,25 @@
     transform: translateY(-50%);
     right: 0;
   }
+
+  @include largeTablet {
+    gap: 16px;
+    padding-right: 10px;
+  }
 }
 
 .nav__search {
   display: none;
+
+  @include largeTablet {
+    display: block;
+  }
 }
 
 .nav__login {
   display: none;
+
+  @include largeTablet {
+    display: block;
+  }
 }
