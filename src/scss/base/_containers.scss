@@ -5,19 +5,25 @@
 }
 
 .container-right {
-	//dots in section products
+  //dots in section products
   position: relative;
   margin-bottom: 32px;
-// //dots in section products
+  // //dots in section products
 
   // overflow-x: hidden;
-  // padding-left: 35px;
-  padding-left: calc(
-    (100% - var(--container-width)) / 2 + var(--container-padding)
-  );
+  padding-left: 15px;
+  // padding-left: calc(
+  //   (100% - var(--container-width)) / 2 + var(--container-padding)
+  // );
 
   @include tablet {
-	padding-left: var(--container-padding);
+    padding-left: var(--container-padding);
+  }
+
+  @include laptop {
+    padding: 0 var(--container-padding);
+    max-width: var(--container-width);
+    margin: 0 auto;
   }
 }
 

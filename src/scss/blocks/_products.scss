@@ -1,5 +1,9 @@
 .products {
   padding-top: 32px;
+
+  @include largeTablet {
+    padding-top: 48px;
+  }
 }
 
 .products__title {
@@ -14,5 +18,11 @@
 
   @include minMobile {
     font-size: 30px;
+  }
+
+  @include largeTablet {
+    font-size: 40px;
+    line-height: 110%;
+    margin-bottom: 48px;
   }
 }
