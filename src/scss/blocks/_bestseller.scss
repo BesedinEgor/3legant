@@ -12,6 +12,13 @@
   line-height: 112%;
   letter-spacing: -0.02em;
   color: var(--black-color);
+
+  @include tablet {
+    text-align: left;
+    font-size: 40px;
+    line-height: 110%;
+    margin-bottom: 48px;
+  }
 }
 
 .bestseller__grid {
@@ -36,6 +43,19 @@
     @include minMobile {
       max-width: auto;
     }
+
+    @include largeTablet {
+      max-width: 262px;
+    }
+
+    @include laptop {
+      font-size: 16px;
+      line-height: 162%;
+    }
+  }
+
+  .card__like {
+    display: none;
   }
 
   @include minMobile {
@@ -44,5 +64,10 @@
     .card__box img {
       width: 200px;
     }
+  }
+
+  @include laptop {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px 24px;
   }
 }

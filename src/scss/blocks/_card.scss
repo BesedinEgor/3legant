@@ -4,6 +4,10 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 12px;
+
+  @include largeTablet {
+    max-width: 262px;
+  }
 }
 
 .card__box {
