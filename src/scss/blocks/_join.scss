@@ -1,6 +1,29 @@
 .join {
-  background-color: #f2f4f6;
+  background-color: #E4E4E4;
   padding: 95px 0;
+
+  @include laptop {
+    position: relative;
+    padding: 0;
+  }
+
+  .container {
+    @include laptop {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  img {
+    display: none;
+
+    @include laptop {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
 
 .join__title {
@@ -17,6 +40,11 @@
   @include minMobile {
     font-size: 26px;
   }
+
+  @include laptop {
+    font-size: 40px;
+    line-height: 110%;
+  }
 }
 
 .join__text {
@@ -28,6 +56,11 @@
   line-height: 157%;
   text-align: center;
   color: #121212;
+
+  @include laptop {
+    font-size: 18px;
+    line-height: 167%;
+  }
 }
 
 .join__form {
@@ -51,6 +84,15 @@
     background-image: url("../img/svg/email.svg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  @include tablet {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @include laptop {
+    width: 488px;
   }
 }
 

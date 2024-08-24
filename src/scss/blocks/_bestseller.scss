@@ -1,6 +1,10 @@
 .bestseller {
   padding-top: 40px;
   margin-bottom: 40px;
+
+  @include laptop {
+    margin-bottom: 100px;
+  }
 }
 
 .bestseller__title {

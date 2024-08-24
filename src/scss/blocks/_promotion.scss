@@ -4,6 +4,18 @@
 
   .container {
     padding-bottom: 29px;
+
+    @include tablet {
+      padding-top: 29px;
+    }
+
+    @include laptop {
+      margin-left: 72px;
+    }
+  }
+
+  @include tablet {
+    padding-top: 0;
   }
 }
 
@@ -12,6 +24,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @include largeTablet {
+    flex-direction: row;
+  }
+
+  @include laptop {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .promotion__top {
@@ -42,6 +63,10 @@
   @include minMobile {
     font-size: 28px;
   }
+
+  @include laptop {
+    font-size: 40px;
+  }
 }
 
 .promotion__text {
@@ -50,6 +75,10 @@
   font-size: 14px;
   line-height: 157%;
   color: #121212;
+
+  @include laptop {
+    font-size: 20px;
+  }
 }
 .promotion__bottom-title {
   margin-bottom: 12px;
@@ -62,15 +91,33 @@
 }
 
 .promotion__button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 147px;
-  padding: 6px 40px;
+  padding: 6px 0;
   background-color: #141718;
+
+  @include largeTablet {
+    max-width: 155px;
+    font-size: 16px;
+    line-height: 175%;
+  }
 }
 
 .promotion__image {
     img {
         max-width: 599px;
         width: 100%;
+
+        @include tablet {
+          max-width:none;
+          width: 100%;
+        }
+    }
+
+    @include largeTablet {
+      order: -1;
+      width: 50%;
     }
 }
