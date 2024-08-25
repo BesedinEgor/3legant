@@ -39,14 +39,13 @@
   }
 
   &.hot:before {
-    content: 'hot';
+    content: "hot";
     width: 63px;
   }
 }
 
 .card__like {
-  // opacity: 0; //desctop use
-  transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in-out;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -57,23 +56,32 @@
   right: 14px;
   height: 88%;
 
-  //   svg {
-  //     // width: 32px;
-  //     // height: 32px;
-  //     // cursor: pointer;
+  @include laptop {
+    opacity: 0;
 
-  //     // &:hover {
-  //     //   path {
-  //     //     fill-rule: #000000;
-  //     //     fill: #000;
-  //     //   }
-  //     // }
-  // //   }
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
+  }
 
-  //   // &:hover { //desctop use
-  //   //     opacity: 1;
-  //   //     transition: opacity .2s ease-in;
-  //   // }
+  svg {
+    cursor: pointer;
+
+    &:hover {
+      path {
+        fill-rule: red;
+        fill: red;
+      }
+    }
+  }
+
+  &:hover {
+    //desctop use
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+  }
 }
 
 .card__button.hero__button {

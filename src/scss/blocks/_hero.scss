@@ -89,6 +89,17 @@
   line-height: 171%;
   text-align: center;
   color: var(--white-color);
+  outline: 2px solid transparent;
+  transition: all 0.3s ease;
+
+  @include tablet {
+    &:hover {
+      background-color: var(--white-color);
+      color: #141718;
+      outline: 2px solid #141718;
+      transition: all 0.3s ease;
+    }
+  }
 
   @include largeTablet {
     font-size: 18px;

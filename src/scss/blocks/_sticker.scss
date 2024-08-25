@@ -1,6 +1,17 @@
 .sticker {
   background-color: #141718;
   color: var(--white-color);
+
+
+  &.sticker--hidden {
+    margin-top: -36px;
+    transform: translateY(-100%);
+    transition: all .3s ease;
+
+    @include largeTablet {
+      margin-top: -41px;
+    }
+  }
 }
 
 .sticker__body {
@@ -78,6 +89,7 @@
     color: #ffab00;
 
     border-bottom: 1px solid #ffab00;
+    outline: none;
 
     &::after {
       content: "";
@@ -88,6 +100,16 @@
       top: 50%;
       transform: translateY(-50%);
       background-image: url("../img/svg/arrow-right-yellow.svg");
+      transition: all 0.3s ease;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      &::after {
+        right: -5px;
+        transition: all 0.3s ease;
+      }
     }
   }
 }
@@ -116,6 +138,8 @@
 
   @include tablet {
     position: absolute;
+    width: 19px;
+    height: 19px;
     right: 20px;
   }
 }

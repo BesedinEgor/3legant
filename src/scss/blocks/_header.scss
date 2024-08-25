@@ -50,6 +50,25 @@
       font-size: 14px;
       line-height: 171%;
       color: #141718;
+      padding: 5px;
+
+      @include laptop {
+        font-size: 16px;
+      }
+    }
+
+    @include laptop {
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease;
+      border-radius: 5px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+        border-bottom: 2px solid #141718;
+        transition: border-bottom 0.3s ease;
+      }
     }
   }
 }

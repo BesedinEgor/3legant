@@ -1,5 +1,5 @@
 .join {
-  background-color: #E4E4E4;
+  background-color: #e4e4e4;
   padding: 95px 0;
 
   @include laptop {
@@ -120,4 +120,14 @@
   line-height: 175%;
   letter-spacing: -0.03em;
   color: #6c7275;
+  transition: color 0.2s ease;
+
+  @include laptop {
+    &:hover,
+    &:focus,
+    &:active {
+      color: #121212;
+      transition: color 0.2s ease;
+    }
+  }
 }

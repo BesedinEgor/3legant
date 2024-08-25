@@ -119,5 +119,19 @@
     background-image: url("../img/svg/arrow-right.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: right 0.2s ease;
+  }
+
+  @include laptop {
+    font-size: 16px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      &::before {
+        right: -5px;
+        transition: right 0.2s ease;
+      }
+    }
   }
 }

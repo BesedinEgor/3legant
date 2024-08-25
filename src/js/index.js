@@ -5,3 +5,5 @@ productSwiper();
 
 import timer from "./modules/timer.js";
 timer();
+
+import stickerClose from "./modules/stickerClose.js";
