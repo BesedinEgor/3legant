@@ -67,36 +67,6 @@
     border-bottom: 1px solid #e8ecef;
     padding-bottom: 16px;
     width: 100%;
-
-    &:nth-child(2) {
-      position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 15px;
-        height: 8px;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        background-image: url("../img/svg/arrow-bottom.svg");
-      }
-    }
-
-    &:nth-child(3) {
-      position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 15px;
-        height: 8px;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        background-image: url("../img/svg/arrow-bottom.svg");
-      }
-    }
   }
 }
 
